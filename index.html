@@ -86,29 +86,30 @@
     </article>
     <!--Aquí comienza el form-->
     <div class="contenedor-form">
-    <form class="form">
-        <h2>Contáctanos</h2>
-        
-        <div class="input-container">
-            <input type="text" id="nombre" name="nombre" required autocomplete="off">
-            <label class="floating-label" for="nombre">Nombre y Apellido</label>
-        </div>
-    
-        <div class="input-container">
-            <input type="email" id="email" name="email" required autocomplete="off">
-            <label class="floating-label" for="email">Ingresá tu correo electrónico</label>
-        </div>
-    
-        <div class="input-container">
-            <input type="tel" id="telefono" name="telefono" required autocomplete="off">
-            <label class="floating-label" for="telefono">Teléfono</label>
-        </div>
-    
-        <div>
-            <button class="button-form resetear">Resetear</button>
-            <button class="button-form enviar">Enviar</button>
-        </div>
-    </form>
+        <form id="form">
+            <h2>Contáctanos</h2>
+
+            <div class="input-container">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido">
+                <div id="nameError" class="error"></div>
+            </div>
+
+            <div class="input-container">
+                <input type="email" id="email" name="email" placeholder="Correo electrónico">
+                <div id="emailError" class="error"></div>
+
+            </div>
+
+            <div class="input-container">
+                <input type="tel" id="telefono" name="telefono" placeholder="Teléfono">
+                <div id="phoneError" class="error"></div>
+            </div>
+
+            <div>
+                <button class="button-form resetear">Resetear</button>
+                <button class="button-form enviar">Enviar</button>
+            </div>
+        </form>
     </div>
 
 
@@ -121,34 +122,10 @@
 
 
 
-    <script>
-        const faSolid = document.querySelector('.fa-solid');
-        const menuCelu = document.querySelector('.lista-navbar-celu');
+    <script src="./root/js/index.js"></script>
+    <script src="./root/js/validaciones.js"></script>
 
-        function toggleMenu() {
-            if (menuCelu.classList.contains('show')) {
-                menuCelu.classList.remove('show');
-                menuCelu.classList.add('hide');
-                menuCelu.addEventListener('animationend', () => {
-                    menuCelu.style.display = 'none';
-                }, { once: true });
-            } else {
-                menuCelu.classList.remove('hide');
-                menuCelu.classList.add('show');
-                menuCelu.style.display = 'flex';
-            }
-        }
 
-        function handleResize() {
-            if (window.innerWidth > 600) {
-                menuCelu.classList.remove('show', 'hide');
-                menuCelu.style.display = '';
-            }
-        }
-
-        faSolid.addEventListener('click', toggleMenu);
-        window.addEventListener('resize', handleResize);
-    </script>
 </body>
 
 </html>

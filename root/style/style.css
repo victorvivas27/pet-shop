@@ -246,11 +246,10 @@
 .contenedor-form {
     display: flex;
     justify-content: center;
-
-
+    margin-top: 100px;
 }
 
-.form {
+#form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -261,75 +260,65 @@
 .input-container {
     position: relative;
     width: 100%;
-
+    margin-bottom: 20px; /* Ajuste para el margen inferior */
 }
 
 input {
-    background: #3C2313;
+    background-color: #ffffff;
     width: 100%;
     height: 8vh;
-    border-radius: 10px;
+    border-radius: 20px;
     font-size: 1em;
     outline: none;
-    border: solid 2px #153372;
+    border: solid 1px #261212;
     box-sizing: border-box;
     padding: 15px;
-    color: #ffffff;
-  transition: border-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
+    color: #000000;
+    transition: border-color 0.3s, box-shadow 0.3s, color 0.3s;
 }
 
+/* Estilos para el placeholder */
+input::placeholder {
+    color: #b0b0b0; /* Color gris claro para el placeholder */
+    font-size: 0.9em; /* Tamaño de fuente del placeholder */
+}
+
+/* Estilos cuando el campo está enfocado */
 input:focus {
-    color: #ffffff;
-    border: solid 2px #001eff;
-    box-shadow: 0 0 5px rgba(0, 30, 255, 0.5);
-  
-}
-
-.floating-label {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    font-size: 1em;
-    color: #ffffff;
-    transition: all 0.5s ease;
-    pointer-events: none;
-    z-index: 1;
-}
-
-input:focus+.floating-label,
-input:valid+.floating-label {
-    top: -28px;
-    left: 15px;
-    font-size: 1.2em;
-    transform: scale(1);
-    z-index: 2;
-    color: #1409e4;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-
+    color: #000000;
+    border: solid 1px #8df406;
+    box-shadow: 0 0 5px rgba(41, 10, 10, 0.5);
 }
 
 
+
+/* Estilo para los botones */
 .button-form {
-
     background-color: #F0A83E;
     border: none;
-    color: white;
+    color: #ffffff;
     cursor: pointer;
     width: 140px;
     height: 40px;
     border-radius: 30px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-
+    font-size: 1em;
 }
 
 .button-form:hover {
-    background-color: #e6972c;
+    background-color: #4a4948;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
 }
 
+/* Estilo para el botón de reset */
 .resetear {
     background: #8A8787;
+}
+
+/* Estilo para mensajes de error */
+.error {
+    color: red;
+    font-size: 0.5em;
+    text-align: center;
 }
 
 
@@ -437,8 +426,8 @@ input:valid+.floating-label {
     }
 
     .card img {
-        width: 250px;
-        height: 250px;
+        width: 150px;
+        height: 150px;
     }
 
     .contenedor-form input {
@@ -452,7 +441,11 @@ input:valid+.floating-label {
 
     }
 
-    .form {
+    #form {
         width: 64vw;
     }
+
+   
+
+   
 }
