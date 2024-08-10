@@ -11,8 +11,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    color: rgb(255, 255, 255);
-    background-color: #222222;
+    color: #fff;
+    background-color: #222;
     align-items: center;
     font-weight: 100;
 }
@@ -27,7 +27,7 @@
 #idioma,
 #moneda {
     color: #F3F3F3;
-    background-color: #222222;
+    background-color: #222;
     font-size: 10px;
     border: none;
 }
@@ -53,15 +53,13 @@
 
 .lista-navbar {
     display: flex;
-
     justify-content: space-evenly;
     align-items: center;
 }
 
 .lista-navbar li {
     list-style: none;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin: 0 10px;
 }
 
 .lista-navbar a {
@@ -71,7 +69,7 @@
 
 .lista-navbar a:hover {
     color: #0a6fe2;
-    transition: all 0.4s ease-in-out;
+    transition: color 0.4s ease-in-out;
 }
 
 /* Estilos para Font Awesome */
@@ -80,23 +78,20 @@
     cursor: pointer;
     opacity: 0;
     visibility: hidden;
-
 }
 
 .fa-solid:hover {
     color: #1409e4;
-    transition: all 0.4s ease-in-out;
+    transition: color 0.4s ease-in-out;
 }
 
 .imagen-header {
     width: 100%;
     background-size: cover;
     background-position: center;
-
 }
 
-/* Estilos para el Hader */
-
+/* Estilos para el Header */
 .contenedor-header {
     position: relative;
 }
@@ -117,10 +112,8 @@
     font-weight: 400;
     line-height: 35.16px;
     text-align: center;
-
     margin-bottom: 10px;
 }
-
 
 .button {
     border-radius: 5px;
@@ -134,15 +127,10 @@
 
 .button:hover {
     background-color: #1409e4;
-    color: white;
     transition: background-color 0.3s ease-in-out;
 }
 
-.puff-in-bottom {
-    animation: puff-in-bottom 0.7s;
-}
-
-/* Estilos para la seccion 1 */
+/* Estilos para la sección 1 */
 .section1 {
     margin: 20px;
     display: flex;
@@ -162,8 +150,6 @@
     font-weight: 700;
     line-height: 46.88px;
     text-align: left;
-
-
 }
 
 .section1 ul {
@@ -174,13 +160,11 @@
 }
 
 .section1 ul li {
-    margin-right: 10px;
-    margin-left: 10px;
+    margin: 0 10px;
     list-style: none;
     font-size: 15px;
     font-weight: 400;
     line-height: 22.5px;
-    text-decoration: none;
 }
 
 .section1 ul li a {
@@ -196,12 +180,11 @@
     margin-left: 20px;
 }
 
-/* Estilos para el article */
+/* Estilos para el artículo */
 .contenedor-card {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
 }
 
 .card {
@@ -212,10 +195,11 @@
     flex-direction: column;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+                rgba(0, 0, 0, 0.12) 0px -12px 30px,
+                rgba(0, 0, 0, 0.12) 0px 4px 6px,
+                rgba(0, 0, 0, 0.17) 0px 12px 13px,
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
     cursor: pointer;
-
 }
 
 .card img {
@@ -224,7 +208,6 @@
 
 .card h4 {
     color: #3C2313;
-    font-family: Roboto;
     font-size: 15px;
     font-weight: 500;
     line-height: 17.58px;
@@ -235,14 +218,9 @@
     font-size: 15px;
     font-weight: 500;
     line-height: 17.58px;
-
 }
 
-.jello-horizontal {
-    animation: jello-horizontal 0.9s both;
-}
-
-/* Estilos para el form */
+/* Estilos para el formulario */
 .contenedor-form {
     display: flex;
     justify-content: center;
@@ -260,7 +238,7 @@
 .input-container {
     position: relative;
     width: 100%;
-    margin-bottom: 20px; /* Ajuste para el margen inferior */
+    margin-bottom: 20px;
 }
 
 input {
@@ -279,24 +257,22 @@ input {
 
 /* Estilos para el placeholder */
 input::placeholder {
-    color: #b0b0b0; /* Color gris claro para el placeholder */
-    font-size: 0.9em; /* Tamaño de fuente del placeholder */
+    color: #b0b0b0;
+    font-size: 0.9em;
 }
 
 /* Estilos cuando el campo está enfocado */
 input:focus {
-    color: #000000;
+    color: #000;
     border: solid 1px #8df406;
     box-shadow: 0 0 5px rgba(41, 10, 10, 0.5);
 }
-
-
 
 /* Estilo para los botones */
 .button-form {
     background-color: #F0A83E;
     border: none;
-    color: #ffffff;
+    color: #fff;
     cursor: pointer;
     width: 140px;
     height: 40px;
@@ -304,10 +280,7 @@ input:focus {
     font-size: 1em;
 }
 
-.button-form:hover {
-    background-color: #4a4948;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+
 
 /* Estilo para el botón de reset */
 .resetear {
@@ -321,21 +294,7 @@ input:focus {
     text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Media Queries */
+/* Media Queries para dispositivos móviles */
 @media (max-width: 600px) {
     .lista-navbar {
         opacity: 1;
@@ -349,7 +308,7 @@ input:focus {
 
     .lista-navbar-celu {
         border: solid 1px black;
-        border-radius: 1rem 0rem;
+        border-radius: 1rem 0;
         display: none;
         flex-direction: column;
         background-color: #F0A83E;
@@ -360,15 +319,11 @@ input:focus {
         z-index: 999;
         transition: background-color 0.3s ease-in-out;
         font-size: 10px;
-
-
     }
 
     .lista-navbar li {
         padding: 10px;
         width: 100%;
-
-
     }
 
     .lista-navbar a {
@@ -390,7 +345,6 @@ input:focus {
         right: 30px;
     }
 
-
     .figcaption p {
         font-size: 10px;
     }
@@ -398,14 +352,11 @@ input:focus {
     .figcaption h1 {
         font-size: 0.8rem;
         padding: 0.3rem;
-
     }
 
     .button {
         font-size: 8px;
         padding: 5px 10px;
-
-
     }
 
     .section1 h2 {
@@ -418,7 +369,6 @@ input:focus {
 
     .strong {
         font-size: 10px;
-
     }
 
     .section1 img {
@@ -438,14 +388,11 @@ input:focus {
     .button-form {
         width: 100px;
         height: 30px;
-
+        font-size: 0.6rem;
     }
 
     #form {
         width: 64vw;
     }
-
-   
-
    
 }
