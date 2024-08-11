@@ -27,8 +27,7 @@ input {
     font-size: 1em;
     outline: none;
     border: solid 1px #261212;
-    box-sizing: border-box;
-    padding: 15px;
+    padding: 5px;
     color: #000000;
     transition: border-color 0.3s, box-shadow 0.3s, color 0.3s;
 }

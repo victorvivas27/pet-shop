@@ -1,0 +1,46 @@
+.contenedor-header-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #F0A83E;
+    margin-top: 200px;
+   
+}
+.contenedor-compartido{
+    display: flex;
+    flex-wrap: wrap;
+   align-items: center;
+    justify-content: space-around;
+   width: 500px;
+   height: 60px;
+
+}
+.contenedor-compartido input{
+    background-color: #ffffff;
+    width: 346px;
+    height:40px;
+    border-radius: 20px;
+    font-size: 1em;
+    outline: none;
+    border: solid 1px #261212;
+   padding: 15px;
+    color: #000000;
+    transition: border-color 0.3s, box-shadow 0.3s, color 0.3s;
+}
+.contenedor-compartido h3{
+    color: #ffffff;
+    font-size: 1rem;
+}
+.carta{
+  width: 50px;
+  height: 30px;
+  
+}
+.button-newsletter{
+    background-color:#261212;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+}

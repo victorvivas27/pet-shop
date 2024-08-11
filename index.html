@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./root/style/section1.css">
     <link rel="stylesheet" href="./root/style/card.css">
     <link rel="stylesheet" href="./root/style/form.css">
+    <link rel="stylesheet" href="./root/style/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Pet Shop</title>
 </head>
@@ -71,24 +72,24 @@
             <li class="a"><a href="">Comida</a></li>
         </ul>
     </section>
-   <!-- Aquí comienza un article -->
-<article class="contenedor-card">
-    <div class="card jello-horizontal">
-        <img src="./root/img/churrasquito.png" alt="Juguete Churrasquito">
-        <h4>Juguete Churrasquito</h4>
-        <p><strong>$150</strong></p>
-    </div>
-    <div class="card jello-horizontal">
-        <img src="./root/img/comedero.png" alt="Comedero para perro">
-        <h4>Comedero para perro</h4>
-        <p><strong>$250</strong></p>
-    </div>
-    <div class="card jello-horizontal">
-        <img src="./root/img/Huesito.png" alt="Huesito juguete">
-        <h4>Huesito juguete</h4>
-        <p><strong>$650</strong></p>
-    </div>
-</article>
+    <!-- Aquí comienza un article -->
+    <article class="contenedor-card">
+        <div class="card jello-horizontal">
+            <img src="./root/img/churrasquito.png" alt="Juguete Churrasquito">
+            <h4>Juguete Churrasquito</h4>
+            <p><strong>$150</strong></p>
+        </div>
+        <div class="card jello-horizontal">
+            <img src="./root/img/comedero.png" alt="Comedero para perro">
+            <h4>Comedero para perro</h4>
+            <p><strong>$250</strong></p>
+        </div>
+        <div class="card jello-horizontal">
+            <img src="./root/img/Huesito.png" alt="Huesito juguete">
+            <h4>Huesito juguete</h4>
+            <p><strong>$650</strong></p>
+        </div>
+    </article>
     <!--Aquí comienza el form-->
     <div class="contenedor-form">
         <form id="form">
@@ -116,19 +117,39 @@
             </div>
         </form>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-    <script src="./root/js/index.js"></script>
-    <script src="./root/js/validaciones.js"></script>
+    <!--Aquí comienza el footer-->
+    <footer>
+        <header class="contenedor-header-footer">
+            <div class="contenedor-compartido">
+                <img class="carta" src="./root/img/Group.png" alt="">
+                <h3>Suscríbete para más novedades</h3>
+            </div>
+            <div >
+                <form class="contenedor-compartido">
+                    <input type="email" id="newsletterEmail" name="newsletterEmail"
+                        placeholder="Ingresá tu correo electronico">
+                    <button class="button-newsletter">Suscribirme</button>
+                </form>
+            </div>
+        </header>
+        <div class="contenedor-footer">
+            <div class="logo-footer">
+                <img src="./root/img/Logo.png" alt="logo perro y gato">
+            </div>
+            <div class="redes-sociales">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-instagram-square"></i></a>
+            </div>
+            <div class="direccion">
+                <p>Dirección: Calle 123, 456, Ciudad</p>
+                <p>Teléfono: 1234567890</p>
+                <p>Email: contact@example.com</p>
+            </div>
+        </div>
+        </ <script src="./root/js/index.js">
+        </script>
+        <script src="./root/js/validaciones.js"></script>
 
 
 </body>
