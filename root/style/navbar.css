@@ -1,0 +1,122 @@
+/* STYLE NAV BAR */
+.grandes-ofertas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: #fff;
+    background-color: #222;
+    align-items: center;
+    font-weight: 100;
+}
+
+.grandes-ofertas h6 {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 11.72px;
+    text-align: left;
+}
+
+#idioma,
+#moneda {
+    color: #F3F3F3;
+    background-color: #222;
+    font-size: 10px;
+    border: none;
+}
+
+.patita {
+    color: black;
+    font-size: 30px;
+    margin-right: 1px;
+}
+
+.logo {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F0A83E;
+    height: 62px;
+}
+
+.perro-gato {
+    height: 20px;
+}
+
+.lista-navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.lista-navbar li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.lista-navbar a {
+    text-decoration: none;
+    color: #F3F3F3;
+}
+
+.lista-navbar a:hover {
+    color: #0a6fe2;
+    transition: color 0.4s ease-in-out;
+}
+
+.fa-solid {
+    height: 20px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.fa-solid:hover {
+    color: #1409e4;
+    transition: color 0.4s ease-in-out;
+}
+
+@media (max-width: 600px) {
+    .lista-navbar {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .fa-solid {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .lista-navbar-celu {
+        border: solid 1px black;
+        border-radius: 1rem 0;
+        display: none;
+        flex-direction: column;
+        background-color: #F0A83E;
+        width: 110px;
+        position: absolute;
+        top: 85px;
+        right: 10px;
+        z-index: 999;
+        transition: background-color 0.3s ease-in-out;
+        font-size: 10px;
+    }
+
+    .lista-navbar li {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .lista-navbar a {
+        margin: 2px;
+    }
+
+    .lista-navbar-celu.show {
+        display: flex;
+        animation: fadeIn 0.5s forwards;
+    }
+
+    .lista-navbar-celu.hide {
+        animation: fadeOut 0.5s forwards;
+    }
+}
