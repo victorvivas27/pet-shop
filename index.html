@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="./root/style/form.css">
     <link rel="stylesheet" href="./root/style/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Pet Shop</title>
+    <link rel="icon" href="./root/img/paw-solid (1).svg">
+    <title> Pet Shop</title>
 </head>
 
 <body>
@@ -117,36 +118,51 @@
             </div>
         </form>
     </div>
-    <!--Aquí comienza el footer-->
-    <footer>
-        <header class="contenedor-header-footer">
-            <div class="contenedor-compartido">
-                <img class="carta" src="./root/img/Group.png" alt="">
-                <h3>Suscríbete para más novedades</h3>
+   <!-- Aquí comienza el footer -->
+<footer>
+    <header class="contenedor-header-footer">
+        <div class="contenedor-compartido">
+            <img class="carta" src="./root/img/Group.png" alt="Icono de suscripción">
+            <h3>Suscríbete para más novedades</h3>
+        </div>
+        <form class="contenedor-compartido">
+            <input type="email" id="newsletterEmail" name="newsletterEmail"
+                placeholder="Ingresá tu correo electrónico" aria-label="Correo electrónico">
+            <button class="button-newsletter" type="submit">Suscribirme</button>
+        </form>
+    </header>
+    <div class="contenedor">
+        <div class="contenedor-footer-contacto">
+            <div class="contacto localidad">
+                <img src="./root/img/Icono.png" alt="Icono de localidad">
+                <span>
+                    <h4>Localidad</h4>
+                    <p>Calle - provincia</p>
+                </span>
             </div>
-            <div >
-                <form class="contenedor-compartido">
-                    <input type="email" id="newsletterEmail" name="newsletterEmail"
-                        placeholder="Ingresá tu correo electronico">
-                    <button class="button-newsletter">Suscribirme</button>
-                </form>
+            <div class="contacto telefono">
+                <img src="./root/img/Icono-contacto.png" alt="Icono de teléfono">
+                <span>
+                    <h4>Teléfono</h4>
+                    <p>Número de teléfono</p>
+                </span>
             </div>
-        </header>
-        <div class="contenedor-footer">
-            <div class="logo-footer">
-                <img src="./root/img/Logo.png" alt="logo perro y gato">
-            </div>
-            <div class="redes-sociales">
-                <a href="#"><i class="fab fa-facebook-square"></i></a>
-                <a href="#"><i class="fab fa-twitter-square"></i></a>
-                <a href="#"><i class="fab fa-instagram-square"></i></a>
-            </div>
-            <div class="direccion">
-                <p>Dirección: Calle 123, 456, Ciudad</p>
-                <p>Teléfono: 1234567890</p>
-                <p>Email: contact@example.com</p>
+            <div class="contacto correo">
+                <img src="./root/img/Icono-correo.png" alt="Icono de correo electrónico">
+                <span>
+                    <h4>Correo Electrónico</h4>
+                    <p>Correo Electrónico</p>
+                </span>
             </div>
         </div>
+        <div class="logo-footer">
+            <img src="./root/img/Logo (1).png" alt="Logo de la empresa">
+        </div>
+    </div>
+</footer>
+<div class="final-footer">
+    <p>Todos los derechos reservados Front End</p>
+</div>
         </ <script src="./root/js/index.js">
         </script>
         <script src="./root/js/validaciones.js"></script>

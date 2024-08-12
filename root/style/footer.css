@@ -1,46 +1,187 @@
-.contenedor-header-footer{
+/* Estructura general del footer */
+.contenedor-header-footer {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     background-color: #F0A83E;
+    padding: 20px;
     margin-top: 200px;
-   
 }
-.contenedor-compartido{
-    display: flex;
-    flex-wrap: wrap;
-   align-items: center;
-    justify-content: space-around;
-   width: 500px;
-   height: 60px;
 
+.contenedor-compartido {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
-.contenedor-compartido input{
+
+.contenedor-compartido input {
     background-color: #ffffff;
-    width: 346px;
-    height:40px;
+    width: 300px;
+    height: 40px;
     border-radius: 20px;
     font-size: 1em;
     outline: none;
     border: solid 1px #261212;
-   padding: 15px;
+    padding: 0 15px;
     color: #000000;
     transition: border-color 0.3s, box-shadow 0.3s, color 0.3s;
 }
-.contenedor-compartido h3{
+
+.contenedor-compartido h3 {
     color: #ffffff;
     font-size: 1rem;
+    margin: 0;
 }
-.carta{
-  width: 50px;
-  height: 30px;
-  
+
+.carta {
+    width: 40px;
+    height: auto;
 }
-.button-newsletter{
-    background-color:#261212;
+
+.button-newsletter {
+    background-color: #261212;
     color: #ffffff;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 20px;
     cursor: pointer;
     border: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.button-newsletter:hover {
+    background-color: #3C2313;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor de contacto y logo */
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    background-color: #3C2313;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.contenedor-footer-contacto {
+    color: #ffffff;
+    flex: 1;
+    margin-right: 20px;
+}
+
+.contacto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contacto img {
+    margin-right: 15px;
+    cursor: pointer;
+    width: 40px;
+    height: auto;
+}
+
+.contacto h4 {
+    margin: 0;
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+
+.contacto p {
+    margin: 5px 0 0;
+    color: #8A8787;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.logo-footer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: none;
+   
+}
+
+.logo-footer img {
+    max-width: 100%;
+    height: auto;
+    }
+
+/* Footer final */
+.final-footer {
+    background: #222222;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+@media (max-width: 768px) {
+    /* Ajustes para el contenedor principal del footer */
+    .contenedor-header-footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .contenedor-compartido {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .contenedor-compartido input {
+        width: 100%;
+        font-size: 0.9em;
+    }
+
+    .button-newsletter {
+        width: 100%;
+    }
+
+    /* Ajustes para la sección de contacto */
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .contenedor-footer-contacto {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contacto {
+        flex-direction: row;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .contacto img {
+        margin-right: 10px;
+    }
+
+    .contacto h4, .contacto p {
+        font-size: 0.9em;
+    }
+
+    .logo-footer {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .logo-footer img {
+        max-width: 200px;
+    }
+
+    /* Ajustes para el pie de página final */
+    .final-footer {
+        font-size: 0.8rem;
+        padding: 10px 0;
+    }
 }
