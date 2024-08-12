@@ -1,13 +1,18 @@
 /* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
     outline: none;  /* Quita el contorno azul en algunos navegadores al hacer clic */
     background-color: transparent; /* Elimina el color de fondo predeterminado */
     border: none; /* Elimina el borde predeterminado */
    -webkit-tap-highlight-color: transparent; /* Elimina el resaltado en navegadores basados en WebKit */
+}
+a{
+    text-decoration: none;
+   
 }
 
 

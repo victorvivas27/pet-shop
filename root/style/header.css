@@ -38,10 +38,7 @@
     cursor: pointer;
 }
 
-.button:hover {
-    background-color: #1409e4;
-    transition: background-color 0.3s ease-in-out;
-}
+
 /* Media Queries para dispositivos móviles */
 @media (max-width: 600px) {
     .figcaption {
