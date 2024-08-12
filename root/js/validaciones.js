@@ -59,9 +59,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Si todo es válido, enviar el formulario
         if (isValid) {
-            alert('Formulario enviado correctamente!');
-            // Aquí puedes hacer la lógica para enviar el formulario
-            // e.g., enviar los datos a un servidor
+            Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: `¡Gracias, ${name}!`,
+                text: "Pronto nos contactaremos contigo.",
+                showConfirmButton: false,
+                timer: 3000,
+                timerProgressBar: true, // Añade una barra de progreso
+                toast: true, // Convierte la alerta en una notificación tipo toast
+                background: '#f0f0f0', // Personaliza el color de fondo
+                customClass: {
+                    popup: 'swal-toast' // Clase personalizada (opcional)
+                }
+            });
             form.reset();
         }
     });

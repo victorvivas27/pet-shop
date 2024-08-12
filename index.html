@@ -12,7 +12,10 @@
     <link rel="stylesheet" href="./root/style/card.css">
     <link rel="stylesheet" href="./root/style/form.css">
     <link rel="stylesheet" href="./root/style/footer.css">
+    <link rel="stylesheet" href="./root/style/modal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- SweetAlert2 CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
     <link rel="icon" href="./root/img/paw-solid (1).svg">
     <title> Pet Shop</title>
 </head>
@@ -135,38 +138,61 @@
     <div class="contenedor">
         <div class="contenedor-footer-contacto">
             <div class="contacto localidad">
-                <img src="./root/img/Icono.png" alt="Icono de localidad">
-                <span>
-                    <h4>Localidad</h4>
-                    <p>Calle - provincia</p>
-                </span>
-            </div>
+                <img id="localidadImg" src="./root/img/Icono.png" alt="Icono de localidad">
+             </div>
+         
             <div class="contacto telefono">
-                <img src="./root/img/Icono-contacto.png" alt="Icono de teléfono">
-                <span>
-                    <h4>Teléfono</h4>
-                    <p>Número de teléfono</p>
-                </span>
+                <img  id="telefonoImg"  src="./root/img/Icono-contacto.png" alt="Icono de teléfono">
+              
             </div>
             <div class="contacto correo">
-                <img src="./root/img/Icono-correo.png" alt="Icono de correo electrónico">
-                <span>
-                    <h4>Correo Electrónico</h4>
-                    <p>Correo Electrónico</p>
-                </span>
+                <img id="correoImg"  src="./root/img/Icono-correo.png" alt="Icono de correo electrónico">
             </div>
         </div>
         <div class="logo-footer">
             <img src="./root/img/Logo (1).png" alt="Logo de la empresa">
         </div>
+      <!-- Modal para Localidad -->
+<div id="modalLocalidad" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Localidad</h2>
+        <p>Calle: Avenida Siempre Viva</p>
+        <p>Provincia: Springfield</p>
+        <p>País: EE.UU.</p>
+    </div>
+</div>
+
+<!-- Modal para Teléfono -->
+<div id="modalTelefono" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Teléfono</h2>
+        <p>Número de teléfono: (555) 123-4567</p>
+    </div>
+</div>
+
+<!-- Modal para Correo Electrónico -->
+<div id="modalCorreo" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Correo Electrónico</h2>
+        <p>Correo Electrónico: contacto@example.com</p>
+    </div>
+</div>
     </div>
 </footer>
 <div class="final-footer">
     <p>Todos los derechos reservados Front End</p>
 </div>
+
+
         <script src="./root/js/index.js"></script>
         <script src="./root/js/validaciones.js"></script>
         <script src="./root/js/validacionSupcripcion.js"></script>
+        <script src="./root/js/modal.js"></script>
+     <!-- SweetAlert2 JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
 </body>
