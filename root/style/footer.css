@@ -101,13 +101,13 @@
     align-items: center;
     padding: 20px;
     border: none;
-   
+
 }
 
 .logo-footer img {
     max-width: 100%;
     height: auto;
-    }
+}
 
 /* Footer final */
 .final-footer {
@@ -119,7 +119,15 @@
     font-weight: 700;
     line-height: 1.2;
 }
+
+.errorSup {
+    text-align: center;
+    font-size: 10px;
+    color: red;
+}
+
 @media (max-width: 768px) {
+
     /* Ajustes para el contenedor principal del footer */
     .contenedor-header-footer {
         flex-direction: column;
@@ -133,14 +141,16 @@
         width: 100%;
         gap: 15px;
     }
-
-    .contenedor-compartido input {
+    .contenedor-input-sup {
+        width: 90%;
+    }
+    .contenedor-input-sup input {
         width: 100%;
         font-size: 0.9em;
     }
 
     .button-newsletter {
-        width: 100%;
+        width: 30%;
     }
 
     /* Ajustes para la sección de contacto */
@@ -165,7 +175,8 @@
         margin-right: 10px;
     }
 
-    .contacto h4, .contacto p {
+    .contacto h4,
+    .contacto p {
         font-size: 0.9em;
     }
 

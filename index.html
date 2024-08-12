@@ -123,9 +123,11 @@
             <img class="carta" src="./root/img/Group.png" alt="Icono de suscripción">
             <h3>Suscríbete para más novedades</h3>
         </div>
-        <form class="contenedor-compartido">
-            <input type="email" id="newsletterEmail" name="newsletterEmail"
-                placeholder="Ingresá tu correo electrónico" aria-label="Correo electrónico">
+        <form class="contenedor-compartido " id="form-sup">
+            <div class="contenedor-input-sup">
+            <input type="email" id="newsletterEmail" name="newsletterEmail" placeholder="Ingresá tu correo electrónico">
+            <div id="emailErrorSup" class="errorSup"></div>
+        </div>
             <button class="button-newsletter" type="submit">Suscribirme</button>
         </form>
     </header>
@@ -161,9 +163,9 @@
 <div class="final-footer">
     <p>Todos los derechos reservados Front End</p>
 </div>
-        <script src="./root/js/index.js">
-        </script>
+        <script src="./root/js/index.js"></script>
         <script src="./root/js/validaciones.js"></script>
+        <script src="./root/js/validacionSupcripcion.js"></script>
 
 
 </body>
