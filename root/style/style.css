@@ -4,13 +4,11 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-/* Estilo general para los botones */
-button {
     outline: none;  /* Quita el contorno azul en algunos navegadores al hacer clic */
     background-color: transparent; /* Elimina el color de fondo predeterminado */
     border: none; /* Elimina el borde predeterminado */
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
     -webkit-tap-highlight-color: transparent; /* Elimina el resaltado en navegadores basados en WebKit */
 }
+
 
