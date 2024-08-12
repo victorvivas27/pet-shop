@@ -14,9 +14,3 @@ button {
     -webkit-tap-highlight-color: transparent; /* Elimina el resaltado en navegadores basados en WebKit */
 }
 
-/* Opcional: Asegúrate de que no haya efecto visual en el estado activo y enfocado */
-button:active,
-button:focus {
-    outline: none; /* Quita el contorno en estado activo y enfocado */
-    background-color: transparent; /* Mantiene el color de fondo deseado */
-}
